@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/reset.min.css">
+    <link rel="icon" type="image/png" href="assets/img/nachos-logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Nachos</title>
 </head>
 <body>
-        <div class="inputs">
-            <input class="in" type="number" id="money" value="" onclick="moneytopoints()">
-            <input class="in" type="number" id="points" value="" onclick="pointstomoney()"><br>
-        </div>
-        <button class="id" id="submit">Search</button>
+    <div class="header">
+        <img src="assets/img/nachos.png">
+    </div>
+    <p class="gh title">NACHOS</p>
+    <p class="gh subtitle">Snapchat Score Giver</p>
+                <div class="div_pay animated fadeInUp faster" id="div_pay" style="display: none;">
+                    <p style="color: #fff; font-size: 24px;margin-top: 40px;" id="ppp">...</p>
+                    <p style="color: rgb(224, 224, 224); font-size: 20px;margin-top: 10px;">BTC: 3ML4B58aw9CHTsjE5nPGzVhTLK8mBz8Vv4</p>
+                    <p style="color: rgb(224, 224, 224); font-size: 20px;margin-top: 5px;">ETH: 0xf1fee16e2b91b462139434b9c5FE949856ccc6eb</p>
+                </div>
+                <div class="inputs">
+                    <input class="in animated fadeInLeft" type="number" id="money" value="" onclick="moneytopoints()">
+                    <input class="in animated fadeInRight" type="text" id="points" value="" disabled>
+                </div>
+                <div class="pay">
+                    <button id="pay">Pay</button>
+                </div>
+                <div class="back"></div>
+    <div class="footer">
+        <p>Created by <a href="https://github.com/Gumbraise">Gumbraise</a></p>
+    </div>
+    
 </body>
 <script src="assets/js/main.js"></script>
 </html>
